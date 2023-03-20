@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+ <title>Landbank</title>
+
+ <style>
+
+ input[type=text], input[type=password] {
+
+ padding: 10px;
+
+ margin: 5px;
+
+ border-radius: 5px;
+
+ border: 1px solid #ccc;
+
+ box-sizing: border-box;
+
+ }
+
+ input[type=cancel] {
+
+ background-color: yellow;
+
+ color: white;
+
+ padding: 10px 20px;
+
+ border: none;
+
+ border-radius: 5px;
+
+ cursor: pointer;
+
+ }
+
+ .error {
+
+ color: red;
+
+ font-size: 14px;
+
+ margin: 5px;
+
+ }
+
+ .success {
+
+ color: yellow;
+
+ font-size: 14px;
+
+ margin: 5px;
+
+ }
+
+ </style>
+
+</head>
+
+<body>
+
+<center>
+
+<img src="landbank.png" alt="landbank.png" width="142" height="142">
+
+<h1 style="color:green;"> LANDBANK</h1>
+
+<h3 style="color:green;"> Digital Onboarding System (DOBS)</h3>
+
+<br>
+
+<table line=1  width=120% height=10% bgcolor="green">
+
+<tr>
+
+<td style="green;"></td>
+
+</tr>
+
+</table>
+
+</center>
+
+<p style="color:gray;"> ONLINE ACCOUNT OPENING</h3>
+
+<div style="color:green;">ACCOUNT INFORMATION-PERSONAL</div>
+
+<table line=1  width=100% height=1% bgcolor="yellow"><br><br>
+
+<tr>
+
+<td style="green;"></td>
+
+</tr>
+
+</table>
+
+<table border=1  width=100% height=5%>
+
+<tr>
+
+<td>
+
+<table>
+
+<tr>
+
+<tr>
+
+<p style="color:gray;">AccountHolder's Details</p>
+
+<form>
+
+ <label for="Account Sub-Type">Account Sub-Type</label><br>
+
+ <select>
+
+<option>SELECT SUB-TYPE</option>
+
+<option value="in">INDIVIDUAL</option>
+
+<option value="pue">JOINT</option>
+
+</select>
+
+  <br><br>
+
+<form>
+
+ <label for="Product">Product</label><br>
+
+ <input type="text" id="Product" 
+
+name="Product" required><br><br>
+
+<form>
+
+ <label for="Product Type">Product Type*</label>
+
+<br>
+
+ <select>
+
+<option> SELECT PRODUCT</option>
+
+<option value="atm">ATM SAVINGS ACCOUNT-REGULAR</option>
+
+<option value="atm">ATM SAVINGS ACCOUNT-PAYROL</option>
+
+<option value="cur">ATM CURRENT ACCOUNT</option>
+
+</select>
+
+  <br><br><br>
+
+<form>
+
+ <label for="Primary Account Name"><b>Primary Account Name*</label><br>
+
+<form>
+
+<input type="text" id="fname" name="fname" value="FIRST NAME"><br>
+
+ <form>
+
+<input type="text" id="mname" name="mname" value="MIDDLE NAME"><br>
+
+<form>
+
+<input type="text" id="name" name="name" value="LAST NAME"><br>
+
+<form>
+
+<input type="text" id="nsuffix" name="nsuffix" value="NAME SUFFIX"><br>
+
+<form>
+
+ <label for="Mobile No."><b>Mobile No.*</label><br>
+
+<form>
+
+<input type="text" id="mobile no." name="mobile no." value="09"><br>
+
+<form>
+
+ <label for="E-mail Address"><b>E-mail address</label><br>
+
+<form>
+
+<input type="text" id="emailaddress" name="emailaddress" value="MYNAME@EXAMPLE.COM"><br>
+
+<p> By providing your e-mail address, you may complete your application at a later time by clicking the Continue Draft button at the DOBS website </p>
+
+</tr>
+
+</table>
+
+</td>
+
+<table border=1  width=100% height=5%>
+
+<tr>
+
+<td>
+
+<table>
+
+<tr>
+
+<tr>
+
+<input type="checkbox" >
+
+  <label for="checkbox1"> I hereby confirm that I have read, understood and agreed to the following Terms and Conditions and other policies governing the issuance and use of  LANDBANK deposit account</label><br>
+
+<input type="checkbox" >
+
+  <label for="checkbox2"> I'm not a robot</label><br>
+
+</tr>
+
+</table>
+
+</td>
+
+<br>
+
+<td>
+
+<div>
+
+<button type="button"oneclick="getvalue()">Cancel</button>
+
+</div>
+
+</body>
+
+</html>
